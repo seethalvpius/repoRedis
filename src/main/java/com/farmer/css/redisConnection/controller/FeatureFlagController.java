@@ -41,8 +41,8 @@ public class FeatureFlagController {
     }
 
     @GetMapping(value = "/test")
-    public String test(){
-        return "Working";
+    public TransactionNotification String test(){
+            return responseHandler.constructSucessResponse();
     }
 
 }
